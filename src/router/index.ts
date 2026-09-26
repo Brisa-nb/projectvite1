@@ -1,5 +1,4 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Hello from '../views/Home.vue'
 import HelloWorld from '../components/HelloWorld.vue'
 import ExampleComponent from '../components/ExampleComponent.vue'
 import SimpleArray from '../components/SimpleArray.vue'
@@ -13,6 +12,7 @@ import usovbind from '../components/usovbind.vue';
 import arreglomovie from '../components/arreglomovie.vue';
 
 const routes = [
+  { path: '/', name:'helloWorld', component: HelloWorld},
   { path: '/example', name: 'Example', component: ExampleComponent },
   { path: '/about', name: 'About', component: About },
   { path: '/arreglosimple', name: 'ArregloSimple', component: SimpleArray },
